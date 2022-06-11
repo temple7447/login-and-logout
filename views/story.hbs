@@ -1,0 +1,49 @@
+<h3>Add Story</h3>
+<div class="row mt-3">
+    <form action="/stories" method="POST">
+    <div class="row">
+        <div class="input-field">
+            <input type="text" class="form-control" name="title" id="title">
+        <label for="title" class="text-dark"><h5>Title</h5></label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field">
+            <h5>Tell Us Your Story:</h5>
+            <textarea name="body" id="body" ></textarea>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+     <div class="row">
+ <label for="status" class="text-dark"><h5>Status</h5></label>
+        
+        <div class="input-field">
+            
+            <select  id="status" class="form-control w-25" name="status">
+                <option value="public" selected>public</option>
+                <option value="private">Private</option>
+                {{!-- <option value="unpublished">unpublished</option> --}}
+            </select>
+        
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <input type="submit" value="save" class="btn btn-primary">
+        <a href="/dashboard" class="btn orange">cancel</a>
+    </div>
+    
+    
+    
+    </form>
+</div>
+
